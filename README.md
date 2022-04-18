@@ -4,17 +4,9 @@
 This is a repository for the Roman Attribute Dictionary 
 
 
-## Installation
 
-To install the latest `rad` release
+romanad is now rad
 
-    pip install rad
+This package has been renamed. Use pip install rad instead.
 
-To install the latest code from the repository
-
-    pip install git+https://github.com/spacetelescope/rad.git
-
-To use the library
-
-    >>> import rad
-
+New package: https://pypi.org/project/rad

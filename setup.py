@@ -1,6 +1,24 @@
 #!/usr/bin/env python3
 from setuptools import setup
+import os
 
-# This should be enabled by pyproject.toml, but that doesn't seem
-# to work with pip 21.2.4.
-setup(use_scm_version={"write_to": "src/rad/_version.py"})
+VERSION = "0.11.1"
+
+
+def get_long_description():
+    with open(
+        os.path.join(os.path.dirname(os.path.abspath(__file__)), "README.md"),
+        encoding="utf8",
+    ) as fp:
+        return fp.read()
+
+
+setup(
+    name="romanad",
+    description="romanad is now rad",
+    long_description=get_long_description(),
+    long_description_content_type="text/markdown",
+    version=VERSION,
+    install_requires=["rad"],
+    classifiers=["Development Status :: 7 - Inactive"],
+)
