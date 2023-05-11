@@ -1,6 +1,8 @@
 0.15.0 (unreleased)
 -------------------
 
+- Add gw_science_file_source to GW file, update size of the filename [#258]
+
 - Update guide star id, add catalog version, and add science file name [#258]
 
 - Remove use of deprecated ``pytest-openfiles`` ``pytest`` plugin. This has been replaced by
